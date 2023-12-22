@@ -11,6 +11,10 @@ def resta(num1, num2):
 def Multiplicacion(num1, num2):
     return num1 * num2
 
+def division(num1, num2):
+    return num1 / num2
+
 print(Multiplicacion(num1 , num2))
 print(suma(num1 , num2, num3))
 print(resta(num1 , num2))
+print(division(num1 , num2))
