@@ -1,8 +1,12 @@
-num1=int(input("Digite un número: "))
-num2=int(input("Digite otro número: "))
-num3=int(input("Digite un tercer numero: "))
+def suma(num1, num2):
+    return num1 + num2
 
-def suma(num1, num2, num3):
-    return num1 + num2 + num3
+print("escriba 'parar' cuando no quiera agregar numeros: ")
+resultado = 0
+while True:
+    numero = input("escriba un número diferente de cero: ")
+    if isinstance(resultado, str) and resultado.lower() == 'parar':
+        break
 
-print(suma(num1 , num2, num3))
+    resultado = suma(resultado, int(numero))
+    print("resultado: ", resultado)
